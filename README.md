@@ -1,4 +1,4 @@
-# @yarnpkg/plugin-publishconfig
+# @yarnpkg/plugin-publishconfig ![Check](https://github.com/alizeait/yarn-plugin-publishconfig/workflows/Check/badge.svg) ![Coverage](https://img.shields.io/codecov/c/github/alizeait/yarn-plugin-publishconfig)
 
 > Extend `publishConfig` to support any property
 
