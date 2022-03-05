@@ -67,7 +67,7 @@ property inside `publishConfig` has to start with `$` to be considered.
 
 ## Example
 
-```json
+```js
 {
   "publishConfig": {
     "main": "./dist/index.js",
