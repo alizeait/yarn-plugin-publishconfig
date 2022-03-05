@@ -81,7 +81,7 @@ describe("beforeWorkspacePacking", () => {
     expect(rawManifest.key5).toEqual([1, 2, 3, 4]);
   });
 
-  test("replaces objects correctly", () => {
+  test("sets object keys correctly", () => {
     const rawManifest = {
       name: "Name",
       key1: "initial",
