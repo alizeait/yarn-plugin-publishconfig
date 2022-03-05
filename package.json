@@ -15,10 +15,11 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/alizeait/nested-equal/issues"
+    "url": "https://github.com/alizeait/yarn-plugin-publishconfig/issues"
   },
   "files": [
-    "package.json"
+    "package.json",
+    "bundles/**"
   ],
   "dependencies": {
     "@types/jest": "^27.4.0",
