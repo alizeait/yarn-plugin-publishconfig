@@ -12,7 +12,7 @@ This plugin allows yarn to support any property starting with `$`.
 ## Install
 
 ```bash
-yarn plugin import https://raw.githubusercontent.com/alizeait/yarn-plugin-publishconfig/master/bundles/@yarnpkg/plugin-publishconfig.js
+yarn plugin import https://raw.githubusercontent.com/alizeait/yarn-plugin-publishconfig/v1.0/bundles/@yarnpkg/plugin-publishconfig.js
 ```
 
 ## Usage
