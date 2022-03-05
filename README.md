@@ -19,7 +19,7 @@ yarn plugin import https://raw.githubusercontent.com/alizeait/yarn-plugin-publis
 
 - Original `package.json`
 
-```json
+```js
 {
   "name": "packageName",
   "scripts": {
@@ -41,7 +41,7 @@ yarn plugin import https://raw.githubusercontent.com/alizeait/yarn-plugin-publis
 
 - `package.json` after publishing or packing
 
-```json
+```js
 {
   "name": "packageName",
   "scripts": {
@@ -71,6 +71,9 @@ property inside `publishConfig` has to start with `$` to be considered.
 {
   "publishConfig": {
     "main": "./dist/index.js",
+    // supports primitives
+    "$anyProperty": "value",
+    // supports nested objects
     "$oclif.commands": "./dist/cli/commands",
     // supports arrays as well
     "$array.1.a.b.1": "./dist/cli/commands"
