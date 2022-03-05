@@ -1,0 +1,35 @@
+name: Check
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 1
+
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Install Packages
+        run: yarn install --immutable --immutable-cache
+
+      - name: Tests and Coverage
+        run: yarn run test --coverage
+
+      - name: Build
+        run: yarn start
+
+      - name: Report to codecov
+        run: |
+          ./node_modules/.bin/codecov
