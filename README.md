@@ -63,7 +63,7 @@ yarn plugin import https://raw.githubusercontent.com/alizeait/yarn-plugin-publis
 
 You can use any supported replacement string by
 [dset](https://github.com/lukeed/dset#usage). But keep in mind that each
-property inside `publishConfig` has to start with `$` to be considered.
+property inside `publishConfig` has to start with `$` to be considered (except the default ones supported by yarn).
 
 ## Example
 
