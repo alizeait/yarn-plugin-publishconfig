@@ -1,2 +1,2 @@
-# yarn-plugin-publishconfig-extended
+# yarn-plugin-publishconfig
 Extends `publishConfig` to support any property
